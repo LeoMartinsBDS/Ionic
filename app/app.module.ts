@@ -15,6 +15,10 @@ import {IntroPageModule} from "../pages/intro/intro.module";
 import {HttpModule} from "@angular/http";
 import { MovieProvider } from '../providers/movie/movie';
 import { HttpClientModule } from '@angular/common/http';
+import {ConfiguracoesPageModule} from "../pages/configuracoes/configuracoes.module";
+import {SobrePageModule} from "../pages/sobre/sobre.module";
+import {PerfilPageModule} from "../pages/perfil/perfil.module";
+import {MovieDetailPageModule} from "../pages/movie-detail/movie-detail.module";
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { HttpClientModule } from '@angular/common/http';
     IonicModule.forRoot(MyApp),
     FeedPageModule,
     IntroPageModule,
-    HttpClientModule
+    HttpClientModule,
+    ConfiguracoesPageModule,
+    SobrePageModule,
+    PerfilPageModule,
+    MovieDetailPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
